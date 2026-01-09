@@ -159,7 +159,14 @@ Every research output must have:
 
 ---
 
+## Notion Integration
+
+```bash
+cd /Users/apple/Desktop/Koddies && node create-notion-page.js "Title" ["Content"]
+```
+
+---
+
 ## Notes
 
 - Visualizations use ASCII/text diagrams (Claude's native capability)
-- Notion integration uses the global script (see ~/.claude/CLAUDE.md)
