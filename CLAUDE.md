@@ -229,6 +229,13 @@ Every research output must have:
 
 ## Notion Integration
 
+### 원문 저장 원칙 (CRITICAL)
+사용자가 "노션에 저장해"라고 하면:
+→ **반드시** 대화에서 작성한 **전체 원문**을 저장할 것
+→ **절대로** 축약/요약 버전을 저장하지 말 것
+→ 내용이 길면 `append` 명령으로 여러 번 나눠서 전체를 저장
+
+### 사용법
 책 내용이나 리서치 결과를 Notion에 저장할 때 사용:
 
 ```bash
