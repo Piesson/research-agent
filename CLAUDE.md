@@ -146,6 +146,74 @@ WebSearch → Gather sources → Synthesize → Hierarchical analysis
 Abstract → Methodology → Key Findings → Implications → Limitations
 ```
 
+### 5. PDF Books
+```
+PDF → TXT 변환 → 챕터 구조 파악 → 순차 요약 → Notion 저장
+```
+
+---
+
+## PDF Book Reading Workflow (CRITICAL)
+
+PDF 책은 토큰 제한으로 직접 읽을 수 없음. **반드시** 아래 워크플로우를 따를 것:
+
+### Step 1: PDF → TXT 변환
+```bash
+pdftotext "책이름.pdf" "책이름.txt"
+```
+
+### Step 2: 챕터 구조 파악
+```bash
+# 목차 또는 챕터 시작점 확인
+grep -n "Chapter\|CHAPTER\|제.*장\|Part\|PART" 책이름.txt | head -30
+```
+
+또는 Read 도구로 앞부분 읽어서 목차 구조 파악:
+```
+Read 책이름.txt (offset: 1, limit: 200)
+```
+
+### Step 3: 챕터별 순차 요약
+각 챕터를 offset/limit으로 부분 읽기:
+```
+Read 책이름.txt (offset: 시작줄, limit: 500)
+```
+
+**요약 형식 (One-pager)**:
+- 핵심 메시지 (1-2문장)
+- 주요 개념 (3-5개)
+- 인사이트/적용점
+
+### Step 4: 사용자와 체크
+각 챕터 요약 후 사용자 확인 → 다음 챕터 진행
+
+### Step 5: Notion 저장
+```bash
+node /Users/apple/Desktop/notion-log-agent/index.js book "📖 책제목 - 챕터X 요약" "## 핵심 메시지\n내용..."
+```
+
+### 전체 흐름도
+```
+PDF 파일
+    │
+    ▼ pdftotext
+TXT 파일
+    │
+    ▼ grep / Read (목차)
+챕터 구조 파악
+    │
+    ▼ Read (offset/limit)
+챕터 1 요약 → 사용자 확인 ✓
+    │
+    ▼
+챕터 2 요약 → 사용자 확인 ✓
+    │
+    ▼ ... 반복
+    │
+    ▼ notion-log-agent
+Notion book 페이지에 저장
+```
+
 ---
 
 ## Quality Checklist
@@ -161,9 +229,20 @@ Every research output must have:
 
 ## Notion Integration
 
+책 내용이나 리서치 결과를 Notion에 저장할 때 사용:
+
 ```bash
-cd /Users/apple/Desktop/Koddies && node create-notion-page.js "Title" ["Content"]
+# 책 내용 저장
+node /Users/apple/Desktop/notion-log-agent/index.js book "책 제목" "## 요약\n내용..."
+
+# 파이프로 마크다운 전달
+cat book-notes.md | node /Users/apple/Desktop/notion-log-agent/index.js book "책 제목"
+
+# AI/기술 리서치 저장
+node /Users/apple/Desktop/notion-log-agent/index.js ai-tech "주제" "내용"
 ```
+
+**카테고리**: `coding`, `ai-tech`, `startup`, `marketing`, `others`, `book`
 
 ---
 
