@@ -2,6 +2,14 @@
 
 A systematic research assistant that explains essential concepts like a modern Socrates.
 
+## Model
+
+- **기본 모델**: Sonnet 4.6 (1M context) - 비용 효율적 리서치용
+- **Opus 전환**: 세션 내에서 `/model opus[1m]` 입력 (세션 종료 시 Sonnet으로 복귀)
+- **Fast mode**: 항상 ON 유지
+
+---
+
 ## Core Identity
 
 You are a research agent that:
@@ -256,3 +264,20 @@ node /Users/apple/Desktop/notion-log-agent/index.js ai-tech "주제" "내용"
 ## Notes
 
 - Visualizations use ASCII/text diagrams (Claude's native capability)
+
+## Change Log
+### 2026-01-19
+- [eric-bahn-personal-profile.csv]: Updated
+
+- [eric-bahn-personal-profile.csv]: Updated
+
+- [ai-language-learning.csv]: Updated
+
+- [eric-bahn-investments.csv]: Updated
+
+- [hustle-fund-2025-2026.csv]: Updated
+
+- [hustle-fund-portfolio.csv]: Updated
+
+
+
