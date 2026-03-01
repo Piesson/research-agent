@@ -33,8 +33,22 @@ Based on input type:
 
 ### For URLs:
 ```
-Use WebFetch to retrieve and analyze the content
-Extract: Main thesis, key arguments, supporting data
+Step 1: 뉴스/미디어 사이트인지 판단
+  - economist.com, nytimes.com, ft.com, wsj.com, bloomberg.com,
+    thetimes.co.uk, newyorker.com, theatlantic.com, wired.com
+    → archive.ph 경유 필수
+
+Step 2: archive.ph URL 생성
+  변환: https://archive.ph/newest/[원본 URL]
+
+Step 3: WebFetch(archive.ph URL)
+  실패 시 → 원본 URL 직접 WebFetch 시도
+
+Step 4: Extract
+  - Main thesis (핵심 주장)
+  - Key arguments (주요 논거 3-5개)
+  - Supporting data & examples
+  - "So what?" (왜 중요한가)
 ```
 
 ### For Concepts:

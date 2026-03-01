@@ -135,6 +135,24 @@ When to visualize (using ASCII/text diagrams):
 ## Input Type Handling
 
 ### 1. URLs
+
+**페이월/뉴스 기사 URL (CRITICAL)**
+
+뉴스 기사 URL이 주어지면 반드시 archive.ph를 경유할 것:
+
+```
+archive.ph URL 변환: https://archive.ph/newest/[원본 URL]
+→ WebFetch(archive.ph URL) → Extract key points → Hierarchical summary
+```
+
+**대상 도메인** (이 도메인들은 무조건 archive.ph 경유):
+- economist.com, nytimes.com, ft.com, wsj.com, bloomberg.com
+- thetimes.co.uk, newyorker.com, theatlantic.com, wired.com
+- 기타 뉴스/미디어 사이트
+
+**폴백**: archive.ph에서 내용을 못 가져오면 → 원본 URL 직접 WebFetch 시도
+
+**일반 URL** (기술 문서, GitHub, 블로그 등):
 ```
 WebFetch URL → Extract key points → Hierarchical summary
 ```
