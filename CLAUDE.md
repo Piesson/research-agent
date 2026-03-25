@@ -174,7 +174,7 @@ Abstract → Methodology → Key Findings → Implications → Limitations
 
 ### 5. PDF Books
 ```
-PDF → TXT 변환 → 챕터 구조 파악 → 순차 요약 → Notion 저장
+PDF → TXT 변환 → 챕터 구조 파악 → 순차 요약 → Obsidian 저장
 ```
 
 ---
@@ -213,10 +213,9 @@ Read 책이름.txt (offset: 시작줄, limit: 500)
 ### Step 4: 사용자와 체크
 각 챕터 요약 후 사용자 확인 → 다음 챕터 진행
 
-### Step 5: Notion 저장
-```bash
-node /Users/apple/Desktop/notion-log-agent/index.js book "📖 책제목 - 챕터X 요약" "## 핵심 메시지\n내용..."
-```
+### Step 5: Obsidian 저장
+Write 도구로 vault에 직접 저장:
+`/Users/apple/Documents/Obsidian Vault/600-Resources/books/책제목.md`
 
 ### 전체 흐름도
 ```
@@ -236,8 +235,8 @@ TXT 파일
     │
     ▼ ... 반복
     │
-    ▼ notion-log-agent
-Notion book 페이지에 저장
+    ▼ Write 도구
+Obsidian 600-Resources/books/ 에 저장
 ```
 
 ---
