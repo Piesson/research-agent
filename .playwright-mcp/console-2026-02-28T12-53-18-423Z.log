@@ -1,0 +1,3 @@
+[    2465ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://bizfileonline.sos.ca.gov/api/Payment/getWebUserActiveCart:0
+[   72501ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://bizfileonline.sos.ca.gov/api/Payment/getWebUserActiveCart:0
+[ 1514499ms] [ERROR] Failed to load resource: the server responded with a status of 500 () @ https://bizfileonline.sos.ca.gov/api/Payment/getWebUserActiveCart:0

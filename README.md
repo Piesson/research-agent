@@ -50,3 +50,21 @@ research-agent/
 │   └── skills/bilingual-output/SKILL.md  # Bilingual output skill
 └── README.md
 ```
+
+## Recent Changes
+
+### 2026-01-19
+- `eric-bahn-personal-profile.csv`: Updated
+
+- `eric-bahn-personal-profile.csv`: Updated
+
+- `ai-language-learning.csv`: Updated
+
+- `eric-bahn-investments.csv`: Updated
+
+- `hustle-fund-2025-2026.csv`: Updated
+
+- `hustle-fund-portfolio.csv`: Updated
+
+
+

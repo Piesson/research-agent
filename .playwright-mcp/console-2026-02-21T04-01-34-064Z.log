@@ -1,0 +1,8 @@
+[    2769ms] [WARNING] The specified value "NaN" cannot be parsed, or is out of range. @ https://www.imdb.com/search/title/?genres=sci-fi&title_type=feature&sort=user_rating,desc&num_votes=50000,&count=100:1472
+[    2769ms] [WARNING] The specified value "NaN" cannot be parsed, or is out of range. @ https://www.imdb.com/search/title/?genres=sci-fi&title_type=feature&sort=user_rating,desc&num_votes=50000,&count=100:1472
+[    2770ms] [WARNING] The specified value "NaN" cannot be parsed, or is out of range. @ https://www.imdb.com/search/title/?genres=sci-fi&title_type=feature&sort=user_rating,desc&num_votes=50000,&count=100:1472
+[    2770ms] [WARNING] The specified value "NaN" cannot be parsed, or is out of range. @ https://www.imdb.com/search/title/?genres=sci-fi&title_type=feature&sort=user_rating,desc&num_votes=50000,&count=100:1472
+[    2770ms] [WARNING] The specified value "NaN" cannot be parsed, or is out of range. @ https://www.imdb.com/search/title/?genres=sci-fi&title_type=feature&sort=user_rating,desc&num_votes=50000,&count=100:1472
+[    2770ms] [WARNING] The specified value "NaN" cannot be parsed, or is out of range. @ https://www.imdb.com/search/title/?genres=sci-fi&title_type=feature&sort=user_rating,desc&num_votes=50000,&count=100:1472
+[    2771ms] [WARNING] The specified value "NaN" cannot be parsed, or is out of range. @ https://www.imdb.com/search/title/?genres=sci-fi&title_type=feature&sort=user_rating,desc&num_votes=50000,&count=100:1472
+[    3775ms] [WARNING] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. @ https://dqpnq362acqdi.cloudfront.net/_next/static/chunks/1532-df2c468e667e4976.js:0

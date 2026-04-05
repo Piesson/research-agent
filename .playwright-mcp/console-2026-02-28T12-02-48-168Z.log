@@ -1,0 +1,38 @@
+[    7373ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://icis.corp.delaware.gov/favicon.ico:0
+[   75688ms] Uncaught Error: Syntax error, unrecognized expression: a[href*=#]
+    at fa.error (https://code.jquery.com/jquery-1.12.4.min.js:1:12732)
+    at fa.tokenize (https://code.jquery.com/jquery-1.12.4.min.js:1:18785)
+    at fa.select (https://code.jquery.com/jquery-1.12.4.min.js:1:21593)
+    at fa (https://code.jquery.com/jquery-1.12.4.min.js:1:7319)
+    at find (https://code.jquery.com/jquery-1.12.4.min.js:1:24108)
+    at n.fn.init (https://code.jquery.com/jquery-1.12.4.min.js:1:24675)
+    at n (https://code.jquery.com/jquery-1.12.4.min.js:1:405)
+    at <anonymous> (https://icis.corp.delaware.gov/ecorp/FranchiseTax/Filing.aspx?eId=260228070404300:330:9)
+    at fire (https://icis.corp.delaware.gov/Ecorp/JS/jquery-1.7.1.js:1045:29)
+    at fireWith (https://icis.corp.delaware.gov/Ecorp/JS/jquery-1.7.1.js:1163:6)
+    at ready (https://icis.corp.delaware.gov/Ecorp/JS/jquery-1.7.1.js:434:13)
+    at DOMContentLoaded (https://icis.corp.delaware.gov/Ecorp/JS/jquery-1.7.1.js:922:9)
+[ 1150449ms] Uncaught Error: Syntax error, unrecognized expression: a[href*=#]
+    at fa.error (https://code.jquery.com/jquery-1.12.4.min.js:1:12732)
+    at fa.tokenize (https://code.jquery.com/jquery-1.12.4.min.js:1:18785)
+    at fa.select (https://code.jquery.com/jquery-1.12.4.min.js:1:21593)
+    at fa (https://code.jquery.com/jquery-1.12.4.min.js:1:7319)
+    at find (https://code.jquery.com/jquery-1.12.4.min.js:1:24108)
+    at n.fn.init (https://code.jquery.com/jquery-1.12.4.min.js:1:24675)
+    at n (https://code.jquery.com/jquery-1.12.4.min.js:1:405)
+    at <anonymous> (https://icis.corp.delaware.gov/ecorp/FranchiseTax/Filing.aspx?eId=260228070404300:330:9)
+    at fire (https://icis.corp.delaware.gov/Ecorp/JS/jquery-1.7.1.js:1045:29)
+    at fireWith (https://icis.corp.delaware.gov/Ecorp/JS/jquery-1.7.1.js:1163:6)
+    at ready (https://icis.corp.delaware.gov/Ecorp/JS/jquery-1.7.1.js:434:13)
+    at DOMContentLoaded (https://icis.corp.delaware.gov/Ecorp/JS/jquery-1.7.1.js:922:9)
+[ 1321217ms] Unexpected token '<'
+[ 2241449ms] TypeError: Cannot read properties of null (reading 'style')
+    at validatepage (https://icis.corp.delaware.gov/ecorp/FranchiseTax/Payment.aspx?eId=260228072602146:1554:94)
+    at HTMLInputElement.onclick (https://icis.corp.delaware.gov/ecorp/FranchiseTax/Payment.aspx?eId=260228072602146:2561:239)
+    at c.Nh (https://icis.corp.delaware.gov/ecorp/FranchiseTax/Payment.aspx?eId=260228072602146:67:155)
+    at HTMLInputElement.<anonymous> (https://icis.corp.delaware.gov/ecorp/FranchiseTax/Payment.aspx?eId=260228072602146:67:473)
+Error: Async Function: click
+    at t (https://icis.corp.delaware.gov/ecorp/FranchiseTax/Payment.aspx?eId=260228072602146:29:490)
+    at Object.C [as Ta] (https://icis.corp.delaware.gov/ecorp/FranchiseTax/Payment.aspx?eId=260228072602146:30:130)
+    at c.jd (https://icis.corp.delaware.gov/ecorp/FranchiseTax/Payment.aspx?eId=260228072602146:67:382)
+    at https://icis.corp.delaware.gov/ecorp/FranchiseTax/Payment.aspx?eId=260228072602146:250:286
